@@ -1,5 +1,5 @@
 {
-    "base-url": "aplika.com",
+    "base-url": "https://submision-dicoding-backend.herokuapp.com",
     "api-doc": [
         {
             "method": "GET",
