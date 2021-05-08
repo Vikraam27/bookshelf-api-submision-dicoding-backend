@@ -1,0 +1,73 @@
+{
+    "base-url": "aplika.com",
+    "api-doc": [
+        {
+            "method": "GET",
+            "path": "/books",
+            "description": "get all books"
+        },
+        {
+            "method": "GET",
+            "path": "/books/{idbook}",
+            "description": "get details book"
+        },
+        {
+            "method": "GET",
+            "path": "/books?name=String",
+            "description": "search books by name"
+        },
+        {
+            "method": "GET",
+            "path": "/books?reading=Number",
+            "value": {
+                "1" : "displays the book currently being read",
+                "0" : "displays books that are not being read"
+            },
+            "description": "filter books by reading or not"
+        },
+        {
+            "method": "GET",
+            "path": "/books?finished=Number",
+            "value": {
+                "1" : "displays books that have been read",
+                "0" : "displays books that have not been read"
+            },
+            "description,": "filter books by finished reading or not"
+        },
+        {
+            "method": "POST",
+            "path": "/books",
+            "value":{
+                "name": "String",
+                "year": "Number",
+                "author": "String",
+                "summary": "String",
+                "publisher": "String",
+                "pageCount": "Number",
+                "readPage": "Number",
+                "reading": "boolean"
+            },
+            "description": "add new book"
+        },
+        {
+            "method": "PUT",
+            "path": "/books/{idbook}",
+            "value":{
+                "name": "String",
+                "year": "Number",
+                "author": "String",
+                "summary": "String",
+                "publisher": "String",
+                "pageCount": "Number",
+                "readPage": "Number",
+                "reading": "boolean"
+            },
+            "description": "update the book"
+        },
+        {
+            "method": "DELETE",
+            "path": "/books/{idbook}",
+            "description": "delete the book"
+        }
+    ]
+}
